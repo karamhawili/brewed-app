@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#232946">
+
+    <ImageView
+        android:layout_width="203dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="182dp"
+        android:src="@drawable/coffeeshopicon"
+        android:contentDescription="@string/image_of_a_shop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/dosis"
+        android:text="@string/appName"
+        android:textSize="60sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        style="@style/Widget.App.Button"
+        android:id="@+id/login_button_main"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/log_in"
+        android:textColor="@color/pink_button" />
+
+    <Button
+        style="@style/Widget.App.Button"
+        android:id="@+id/signup_button_main"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/pink_button"
+        android:text="@string/sign_up"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="236dp"
+        android:layout_height="0.75dp"
+        android:background="#66979797"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/google_icon"
+            android:contentDescription="@string/google_icon"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/continue_with_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/quicksand"
+            android:text="@string/continue_with_google"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/upper_layout_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dosis"
+            android:text="Hello,"
+            android:textSize="20sp"
+            android:textColor="@color/navy_main"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="25dp" />
+        <TextView
+            android:id="@+id/username_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dosis_light"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textColor="@color/pink_button"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upper_layout_acc"
+        android:gravity="center_horizontal"
+        android:background="@color/gray_background"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_person_35"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Info"
+                    android:fontFamily="@font/dosis_light"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_main"
+                    android:letterSpacing="0.1"
+                    android:layout_marginStart="55dp"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_shopping_cart_35"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous Orders"
+                    android:fontFamily="@font/dosis_light"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_main"
+                    android:letterSpacing="0.1"
+                    android:layout_marginStart="55dp"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_info_35"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:fontFamily="@font/dosis_light"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_main"
+                    android:letterSpacing="0.1"
+                    android:layout_marginStart="55dp"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            style="@style/Widget.App.Button"
+            android:id="@+id/logout_btn_acc"
+            android:layout_width="312dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_menu_adp"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navy_main"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="@drawable/icon_menu_color"
+        app:labelVisibilityMode="unlabeled"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_main">#232946</color>
+    <color name="navy_secondary">#2f466c</color>
+    <color name="pink_button">#FF9BA0</color>
+    <color name="gray_placeholder">#CECECE</color>
+    <color name="gray_background">#FBFBFB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

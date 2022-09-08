@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "916551635828",
+    "project_id": "brewedapp-cad0c",
+    "storage_bucket": "brewedapp-cad0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916551635828:android:e4156f55c81220a45a1221",
+        "android_client_info": {
+          "package_name": "com.example.brewedapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916551635828-ri5gn2d1ve037o7v6rsi661rltqn2qls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVM1aWThp1ElkEwhlG5139HvYWF1Y3j10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916551635828-ri5gn2d1ve037o7v6rsi661rltqn2qls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

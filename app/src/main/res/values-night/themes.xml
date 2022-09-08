@@ -1,0 +1,178 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BrewedApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/navy_main</item>
+        <item name="colorPrimaryDark">@color/navy_secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/gray_placeholder</item>
+        <item name="colorSurface">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pink_button</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- disable window animation -->
+        <item name="android:windowAnimationStyle">@null</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryDark</item>
+
+        <!-- navigation bar color -->
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/navy_main</item>
+
+        <!-- change material buttons style -->
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+
+    </style>
+
+    <!-- Login/SignUp activities theme. -->
+    <style name="Theme.BrewedApp.LoginSignup" parent="Theme.BrewedApp">
+
+        <!-- navigation bar color -->
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+
+        <!-- status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">#AAFFFFFF</item>
+
+    </style>
+
+    <!-- TextInputEditText style -->
+    <style name="TextInputLayoutStyle"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/navy_main</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="hintTextColor">@color/navy_main</item>
+        <item name="hintEnabled">true</item>
+        <item name="android:textColorHint">@color/gray_placeholder</item>
+    </style>
+
+
+
+    <!-- button and button text appearance -->
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/button_text_style</item>
+        <item name="shapeAppearance">@style/login_signup_buttons</item>
+    </style>
+
+    <!-- text appearance on buttons -->
+    <style name="button_text_style" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/quicksand_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!-- button shape -->
+    <style name="login_signup_buttons" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+
+    <!-- Filter button -->
+    <style name="Widget.App.Button.Filter" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/button_text_style_filter</item>
+        <item name="shapeAppearance">@style/filter_buttons</item>
+    </style>
+    <!-- text appearance on filter buttons -->
+    <style name="button_text_style_filter" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/quicksand_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!-- filter button shape -->
+    <style name="filter_buttons" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+
+
+
+
+
+    <!-- price on card -->
+    <style name="text_on_card">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/maven_pro</item>
+    </style>
+
+    <!-- title on card -->
+    <style name="title_on_card">
+        <item name="android:textColor">#606060</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+    </style>
+
+
+    <!-- ProductInfoActivity -->
+    <style name="pia_title">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="pia_subtitle">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/pink_button</item>
+    </style>
+
+    <style name="pia_attributes">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/quicksand_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="pia_values">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- End of styling for ProductInfoActivity -->
+
+
+    <!-- CartActivity -->
+    <style name="ca_titles">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="ca_titles_items">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ca_subtitles">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/pink_button</item>
+    </style>
+
+    <style name="ca_text">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/quicksand</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="TextInputLayoutStyle_ca"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/navy_main</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="hintTextColor">@color/navy_main</item>
+        <item name="hintEnabled">true</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+</resources>

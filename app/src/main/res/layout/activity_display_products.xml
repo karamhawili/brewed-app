@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayProductsActivity"
+    android:background="@color/gray_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:id="@+id/search_filter_layout"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/title_dpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosis"
+            android:text="@string/appName"
+            android:textSize="40sp"
+            android:textColor="@color/navy_main"
+            android:letterSpacing="0.1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/linear_progress_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:indeterminate="true"
+            app:trackThickness="2dp"
+            app:indicatorColor="@color/pink_button"/>
+
+
+    </RelativeLayout>
+
+    <!-- put it in another relative layout and say that recyclerview should be below that layout -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search_filter_layout"
+        android:layout_centerHorizontal="true"
+        android:translationY="-22dp"
+        android:background="@drawable/custom_search_edittext_noshadow"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:padding="10dp"
+        android:fontFamily="@font/quicksand"
+        android:hint="@string/search_ph"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_placeholder"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/gray_placeholder"
+        android:elevation="1dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_adp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar"
+        android:layout_above="@+id/navigation_menu_adp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/gray_background"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_menu_adp"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navy_main"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="@drawable/icon_menu_color"
+        app:labelVisibilityMode="unlabeled"/>
+
+
+
+</RelativeLayout>

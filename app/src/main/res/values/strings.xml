@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BrewedApp</string>
+    <string name="appName">BREWED</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="google_icon">Google Icon</string>
+    <string name="image_of_a_shop">Image of a shop</string>
+    <string name="log_in_title">Log In</string>
+    <string name="email_ph">Email</string>
+    <string name="password_ph">Password</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="full_name_ph">Full Name</string>
+    <string name="confirm_password_ph">Confirm Password</string>
+    <string name="address_ph">Address</string>
+    <string name="filter">Filter</string>
+    <string name="search_ph">search…</string>
+
+    <!-- Coffee Products : Brands -->
+    <string-array name="coffee_brands">
+        <item>Amity Brothers Coffee Co</item>
+        <item>Battlecreek Coffee Roasters</item>
+        <item>Bay Coffee Roasters</item>
+        <item>Blue Bottle Coffee</item>
+        <item>Buddha Beans Coffee Co</item>
+        <item>Buddy Brew Coffee</item>
+        <item>Early Bird Coffee</item>
+        <item>Fiddle Heads</item>
+        <item>French Truck Coffee</item>
+        <item>Partners Coffee Roasters</item>
+        <item>Primo Passo Coffee Co</item>
+        <item>Quills Coffee</item>
+        <item>Wilmer Barrientos</item>
+    </string-array>
+</resources>

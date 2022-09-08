@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+        <RelativeLayout
+            android:id="@+id/top_ca"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/dosis"
+                android:text="Cart"
+                android:textSize="30sp"
+                android:textColor="@color/navy_main"
+                android:letterSpacing="0.1" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_shopping_bag_30" />
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_ca"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:background="@color/gray_background"
+        android:layout_above="@+id/navigation_menu_adp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/ca_titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Details"/>
+
+            <!-- NOTE - margin bottom in item layout -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_ca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="20dp"
+                android:background="#2D979797"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                style="@style/ca_titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Location"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_address_ca"
+                style="@style/TextInputLayoutStyle_ca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/address_ph"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                app:startIconTint="@color/navy_main">
+                <EditText
+                    android:id="@+id/etAddress_ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionDone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="10dp"
+                android:background="#2D979797"
+                android:layout_gravity="center_horizontal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <TextView
+                    style="@style/pia_attributes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subtotal"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/subtotal_tv"
+                    style="@style/pia_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="$90.0" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    style="@style/pia_attributes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Charge"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    style="@style/pia_values"
+                    android:id="@+id/delivery_charge_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10.0"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    style="@style/pia_attributes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total  (cash on delivery)"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    style="@style/pia_values"
+                    android:id="@+id/total_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$100.0"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <Button
+                style="@style/Widget.App.Button"
+                android:id="@+id/place_order_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Place Order"
+                android:backgroundTint="@color/pink_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_menu_adp"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navy_main"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="@drawable/icon_menu_color"
+        app:labelVisibilityMode="unlabeled"/>
+
+</RelativeLayout>
